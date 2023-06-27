@@ -1,0 +1,14 @@
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    padding: 0 8em;
+    width: 100vw;
+}
+
+.car-logo{
+    height: 6em;
+    opacity: 25%;
+}

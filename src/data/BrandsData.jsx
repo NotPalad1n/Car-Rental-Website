@@ -1,0 +1,37 @@
+export default [
+    {
+        id:"1",
+        name:"porsche",
+        logo:"porsche-logo"
+    },
+    {
+        id:"2",
+        name:"bmw",
+        logo:"bmw-logo"
+    },
+    {
+        id:"3",
+        name:"mercedes",
+        logo:"mercedes-logo"
+    },
+    {
+        id:"4",
+        name:"audi",
+        logo:"audi-logo"
+    },
+    {
+        id:"5",
+        name:"land-rover",
+        logo:"land-rover-logo"
+    },
+    {
+        id:"6",
+        name:"vw",
+        logo:"vw-logo"
+    },
+    {
+        id:"7",
+        name:"jaguar",
+        logo:"jaguar-logo"
+    },
+]

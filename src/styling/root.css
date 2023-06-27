@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Catamaran", sans-serif;
+}
+
+:root{
+    --darkcolor: #14213D;
+    --accentcolor: #FCA311;
+    --lightcolor: #E5E5E5;
+    --white: #fff;
+    --black: #000;
+}
