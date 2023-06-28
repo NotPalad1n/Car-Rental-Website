@@ -27,7 +27,6 @@ const Service = () => {
         <div className='cards'>
           {cardElements}
         </div>
-        
     </div>
   )
 }

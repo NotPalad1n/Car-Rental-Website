@@ -6,7 +6,7 @@ import Car from "../images/car.png"
 import Location from "../images/location.png"
 import Calendar from "../images/calendar.png"
 
-import VehicleArsenal from '../data/VehicleArsenal'
+import Vehiclefleet from '../data/VehicleFleet'
 import Locations from '../data/Locations'
 
 const Book = () => {
@@ -20,7 +20,7 @@ const Book = () => {
     }
   )
 
-  const [arsenal, setArsenal] = React.useState(VehicleArsenal)
+  const [fleet, setFleet] = React.useState(Vehiclefleet)
   const [locations , setLocations] = React.useState(Locations)
   
   function handleChange(event){
@@ -36,7 +36,7 @@ const Book = () => {
     )
   }
 
-  const arsenalElements = arsenal.map(
+  const arsenalElements = fleet.map(
     car => (<option key={car.id} value={car.name}>{car.name}</option>)
   )
 

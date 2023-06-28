@@ -1,4 +1,4 @@
-.card {
+.service-card {
     position: relative;
     background-color: var(--white);
     display: flex;
@@ -21,12 +21,12 @@
     top: 0;
 }
 
-.card img {
+.service-card img {
     width: 6em;
     height: 6em;
 }
 
-.card h1 {
+.service-card h1 {
     font-weight: 800;
     line-height: 1.25em;
     font-size: 1.75em;

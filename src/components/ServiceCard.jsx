@@ -4,7 +4,7 @@ import "../styling/ServiceCard.css"
 
 const ServiceCard = (props) => {
   return (
-    <div className='card'>
+    <div className='service-card'>
         <div className='coloredband'></div>
         <img src={require("../images/service/" + props.icon + ".png")} alt="" />
         <h1>{props.title}</h1>

@@ -5,6 +5,7 @@ import Banner from './components/Banner'
 import Brands from './components/Brands'
 import Book from './components/Book'
 import Service from './components/Service'
+import Fleet from './components/Fleet'
 
 import "./styling/App.css"
 
@@ -16,6 +17,7 @@ const App = () => {
        <Brands/>
        <Book/>
        <Service/>
+       <Fleet/>
     </div>
   )
 }
