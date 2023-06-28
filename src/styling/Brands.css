@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     gap: 4em;
     padding: 0 8em;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 .car-logo{

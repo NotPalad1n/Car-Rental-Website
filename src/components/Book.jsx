@@ -6,6 +6,9 @@ import Car from "../images/car.png"
 import Location from "../images/location.png"
 import Calendar from "../images/calendar.png"
 
+import VehicleArsenal from '../data/VehicleArsenal'
+import Locations from '../data/Locations'
+
 const Book = () => {
   const [search, setSearch] = React.useState(
     {
@@ -16,6 +19,9 @@ const Book = () => {
       dropOffDate:""
     }
   )
+
+  const [arsenal, setArsenal] = React.useState(VehicleArsenal)
+  const [locations , setLocations] = React.useState(Locations)
   
   function handleChange(event){
     setSearch(
@@ -30,54 +36,69 @@ const Book = () => {
     )
   }
 
+  const arsenalElements = arsenal.map(
+    car => (<option key={car.id} value={car.name}>{car.name}</option>)
+  )
+
+  const locationElements = locations.map(
+    location => (<option key={location.id} value={location.name}>{location.name}</option>)
+  )
+
   console.log(search)
   
   return (
     <div className='book-a-car'>
+      <h1>Book a car</h1>
       <form>
         <div>
           <div className='text'>
             <img src={Car} alt="" className='icon'/>
-            <p>Select your car</p>
+            <p>Select your car <span>*</span></p>
           </div>
-          <input 
-            type="text" 
-            placeholder='Select your car'
-            name='car'
+          <select
+            className='input'
             value={search.car}
+            name='car'
             onChange={handleChange}
-            />
+          >
+            <option value="">Select your car</option>
+            {arsenalElements}
+          </select>
         </div>
         <div>
           <div className='text'>
             <img src={Location} alt="" className='icon'/>
-            <p>Pick-up</p>
+            <p>Pick-up <span>*</span></p>
           </div>
-          <input 
-            type="text" 
-            placeholder='Select pick-up location'
+          <select 
             name='pickUpLocation'
             value={search.pickUpLocation}
             onChange={handleChange}
-          />
+            className='input'
+          >
+            <option value="">Select pick-up location</option>
+            {locationElements}
+          </select>
         </div>
         <div>
           <div className='text'>
             <img src={Location} alt="" className='icon'/>
-            <p>Drop-off</p>
+            <p>Drop-off <span>*</span></p>
           </div>
-          <input 
-            type="text" 
-            placeholder='Select drop-off location'
+          <select 
             name='dropOffLocation'
             value={search.dropOffLocation}
             onChange={handleChange}
-          />
+            className='input'
+          >
+            <option value="">Select drop-off location</option>
+            {locationElements}
+          </select>
         </div>
         <div>
           <div className='text'>
             <img src={Calendar} alt="" className='icon'/>
-            <p>Pick-up</p>
+            <p>Pick-up <span>*</span></p>
           </div>
           <input 
             type="datetime" 
@@ -85,12 +106,13 @@ const Book = () => {
             name='pickUpDate'
             value={search.pickUpDate}
             onChange={handleChange}
+            className='input'
           />
         </div>
         <div>
           <div className='text'>
             <img src={Calendar} alt="" className='icon'/>
-            <p>Drop-off</p>
+            <p>Drop-off <span>*</span></p>
           </div>
           <input 
             type="datetime"
@@ -98,10 +120,12 @@ const Book = () => {
             name='dropOffDate'
             value={search.dropOffDate}
             onChange={handleChange}
+            className='input'
           />
         </div>
         <button>Search</button>
       </form>
+
     </div>
   )
 }

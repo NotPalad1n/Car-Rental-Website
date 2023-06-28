@@ -3,7 +3,6 @@ import React from 'react'
 import "../styling/Banner.css"
 
 import Porsche from "../images/PorscheCut.png"
-import Skyscrapers from "../images/skyscraper.png"
 
 const Banner = () => {
   return (
@@ -13,10 +12,9 @@ const Banner = () => {
             <p>Drive the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more</p>
             <div className='buttons'>
                 <button className='book'>Book Ride</button>
-                <button className='learn'>Learn More  ></button>
+                <button className='learn'>Learn More</button>
             </div>
         </div>
-        {/* <img src={Skyscrapers} alt="" className='banner-backgroud'/> */}
         <img src={Porsche} alt="" className='banner-image'/>
     </div>
   )

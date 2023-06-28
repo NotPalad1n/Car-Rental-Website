@@ -8,7 +8,7 @@ const Brands = () => {
     const [brands, setBrands] = React.useState(BrandsData)
     
     const brandElements = brands.map(brand => 
-        <img key={brand.id} src={require('../images/' + brand.logo + '.png')} alt="" className='car-logo'/>
+        <img key={brand.id} src={require('../images/brands/' + brand.logo + '.png')} alt="" className='car-logo'/>
     )
 
     return (

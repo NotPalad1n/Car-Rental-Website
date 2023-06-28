@@ -1,0 +1,36 @@
+.service{
+    position: relative;
+    background-color: var(--darkcolor);
+    color: var(--white);
+    padding: 6em 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    padding-bottom: 12em;
+}
+
+.service .title{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.25em;
+    width: 10em;
+}
+
+.service .subtext{
+    color: var(--accentcolor);
+    font-weight: 600;
+    line-height: 1.25em;
+    width: 10em;
+}
+
+.service .cards{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6em;
+    bottom: -55%;
+}
