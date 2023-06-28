@@ -12,11 +12,27 @@
     padding-bottom: 12em;
 }
 
+/* .service::before{
+    content: "";
+    background-image: url(../images/service-background1.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    
+} */
+
 .service .title{
     font-size: 3em;
     font-weight: 700;
     line-height: 1.25em;
     width: 10em;
+    z-index: 1;
 }
 
 .service .subtext{
@@ -24,6 +40,7 @@
     font-weight: 600;
     line-height: 1.25em;
     width: 10em;
+    z-index: 1;
 }
 
 .service .cards{

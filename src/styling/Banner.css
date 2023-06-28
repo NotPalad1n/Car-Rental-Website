@@ -68,3 +68,14 @@
     top: 50%;
     transform: translate(0, -50%);
 }
+
+.banner-background{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 22em;
+    z-index: -1;
+    opacity: 0.4;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 20%, transparent 80%);;
+}
+
