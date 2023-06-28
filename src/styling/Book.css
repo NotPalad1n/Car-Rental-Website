@@ -1,6 +1,6 @@
 .book-a-car{
     display: flex;
-    margin: 8em;
+    margin: 12em;
     align-items: center;
     justify-content: center;
     max-width: 100vw;
@@ -22,21 +22,33 @@
 
 .book-a-car input{
     width: 20em;
-    height: 2.5em;
+    height: 2.375em;
     text-indent: 0.5em;
 }
 
 .book-a-car button{
-    background-color: var(--darkcolor);
+    background-color: var(--accentcolor);
     color: var(--white);
     font-weight: 700;
     font-size: 1.125em;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     transition: 0.25s ease-in-out;
-    padding: 0.5em 6em;
+    width: 14.625em;
+    height: 3.25em;
 }
 
 .book-a-car button:hover{
     transform: scale(1.05);
+}
+
+.book-a-car .icon{
+    height: 1em;
+    aspect-ratio: 1;
+}
+
+.book-a-car .text{
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
 }
