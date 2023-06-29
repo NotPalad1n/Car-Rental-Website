@@ -6,6 +6,7 @@ import Brands from './components/Brands'
 import Book from './components/Book'
 import Service from './components/Service'
 import Fleet from './components/Fleet'
+import GetInTouch from './components/GetInTouch'
 
 import "./styling/App.css"
 
@@ -18,6 +19,7 @@ const App = () => {
        <Book/>
        <Service/>
        <Fleet/>
+       <GetInTouch/>
     </div>
   )
 }

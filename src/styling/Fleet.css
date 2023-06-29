@@ -1,6 +1,7 @@
 .fleet{
     padding: 12em;
     padding-top: 24em;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +24,9 @@
 .fleet .vehicle-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    gap: 4em;
+    justify-content: space-between ;
+    gap: 2em 4em;
     margin-top: 6em;
+    width: 100%;
 }

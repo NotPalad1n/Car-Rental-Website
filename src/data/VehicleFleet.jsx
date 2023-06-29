@@ -10,14 +10,14 @@ export default [
         id:2,
         name:"Porsche 911 T",
         image:"porsche-911-t",
-        price:100,
+        price:200,
         location:"Los Angeles"
     },
     {
         id:3,
         name:"Mercedes S Class",
         image:"mercedes-s-class",
-        price:70,
+        price:100,
         location:"San Fransisco"
     },
     {

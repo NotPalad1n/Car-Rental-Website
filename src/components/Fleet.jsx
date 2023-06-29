@@ -19,9 +19,10 @@ const Fleet = () => {
             <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
             <div className='vehicle-list'>
                 {carElements}
-            </div>
+            </div> 
         </div>
     )
 }
 
 export default Fleet
+

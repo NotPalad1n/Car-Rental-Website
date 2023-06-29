@@ -1,0 +1,92 @@
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin: 8em 12em;
+    margin-top: 0;
+}
+
+.get-in-touch .title {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.25em;
+}
+
+.get-in-touch .subtext {
+    color: var(--accentcolor);
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+.get-in-touch .form-and-info{
+    background-color: var(--lightcolor);
+    display: flex;
+    width: 100%;
+    margin-top: 4em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.get-in-touch .info{
+    color: var(--white);
+    background-color: var(--darkcolor);
+    padding: 2em 1em;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.get-in-touch .info h1{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.get-in-touch form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    justify-content: center;
+    width: 100%;
+}
+
+.get-in-touch form div{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.get-in-touch input {
+    height: 40px;
+    font-size: 1em;
+    text-indent: 5px;
+    width: 100%;
+}
+
+.get-in-touch textarea{
+    height: 12em;
+    font-size: 1em;
+    width: 100%;
+    padding: 5px;
+}
+
+.get-in-touch button {
+    background-color: transparent;
+    color: var(--white);
+    background-color: var(--darkcolor);
+    border: none;
+    transition: 0.25s ease-in-out;
+    font-weight: 700;
+    font-size: 1em;
+    width: 150px;
+    height: 50px;
+}
+
+.get-in-touch button:hover {
+    background-color: var(--accentcolor);
+    color: var(--white);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
