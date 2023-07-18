@@ -22,7 +22,7 @@ const Service = () => {
 
   return (
     <div className='service-container' id='Services'>
-      <div className='service' >
+      <div className='service'>
         <p className='subtext'>Plan your trip now</p>
         <h1 className='title'>Quick & easy car rental</h1>
         <div className='cards'>
