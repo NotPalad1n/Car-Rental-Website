@@ -4,7 +4,8 @@ import "../styling/GetInTouch.css"
 
 const GetInTouch = () => {
   return (
-    <div className='get-in-touch'>
+    <div id='Get-in-Touch'>
+      <div className='get-in-touch'>
       <p className='subtext'>Contact</p>
       <h1 className='title'>Get in touch</h1>
       <div className='form-and-info'>
@@ -53,6 +54,7 @@ const GetInTouch = () => {
             </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Catamaran", sans-serif; 
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -11,4 +12,8 @@
     --lightcolor: #E5E5E5;
     --white: #fff;
     --black: #000;
+}
+
+html{
+    scroll-behavior: smooth;
 }

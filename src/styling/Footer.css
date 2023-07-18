@@ -1,0 +1,40 @@
+.footer{
+    padding: 8em 0;
+    background-color: var(--darkcolor);
+    color: var(--white);
+    margin-top: 12em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.footer a:hover{
+    color: var(--accentcolor);
+}
+
+.footer p{
+    color: var(--lightcolor);
+}
+
+.footer .icons{
+    margin-bottom: 40px;
+}
+
+.footer div{
+    display: flex;
+    gap: 20px;
+}
+
+.footer img{
+    width: 50px;
+}

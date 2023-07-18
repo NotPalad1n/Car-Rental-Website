@@ -13,7 +13,7 @@ const Fleet = () => {
     )
   
     return (
-        <div className='fleet'>
+        <div className='fleet ' id='Fleet'>
             <p className='subtext'>Vehicle models</p>
             <h1 className='title'>Our rental fleet</h1>
             <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>

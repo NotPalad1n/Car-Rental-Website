@@ -1,3 +1,7 @@
+.service-container{
+    padding-top: 12em;
+}
+
 .service{
     position: relative;
     background-color: var(--darkcolor);

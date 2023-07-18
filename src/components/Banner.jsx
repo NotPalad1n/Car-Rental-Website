@@ -7,7 +7,7 @@ import Map from "../images/map.png"
 
 const Banner = () => {
   return (
-    <div className='banner'>
+    <div className='banner' id='Home'>
         <div className='text'>
             <h1>Save <span>big</span> with our car rental</h1>
             <p>Drive the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more</p>
