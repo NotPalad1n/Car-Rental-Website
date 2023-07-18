@@ -16,21 +16,6 @@
     padding-bottom: 12em;
 }
 
-/* .service::before{
-    content: "";
-    background-image: url(../images/service-background1.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
-    
-} */
-
 .service .title{
     font-size: 3em;
     font-weight: 700;
@@ -54,4 +39,82 @@
     justify-content: space-between;
     gap: 6em;
     bottom: -55%;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .service .cards{
+        position: static;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2em;
+        margin-top: 4em;
+        
+    }
+    .service{
+        padding: 6em 2em;
+    }
+    .service .title{
+        width: auto;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 750px) {
+    .service .cards {
+        position: static;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2em;
+        margin-top: 4em;
+
+    }
+
+    .service {
+        padding: 6em 2em;
+    }
+
+    .service .title {
+        width: auto;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 750px) and (max-device-width : 1024px) {
+    .service .cards {
+        position: static;
+        flex-wrap: nowrap;
+        max-width: 100vw;
+        margin-top: 4em;
+        gap: 10px;
+        
+    }
+
+    .service {
+        padding: 6em 2em;
+    }
+
+    .service .title {
+        width: auto;
+    }
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1224px) {
+    .service .cards {
+        position: static;
+        flex-wrap: nowrap;
+        max-width: 100vw;
+        margin-top: 4em;
+        gap: 10px;
+
+    }
+
+    .service {
+        padding: 6em 2em;
+    }
+
+    .service .title {
+        width: auto;
+    }
 }

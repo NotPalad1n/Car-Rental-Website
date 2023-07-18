@@ -63,3 +63,104 @@
     align-items: center;
     gap: 0.25em;
 }
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .book-a-car{
+        margin: 2em;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .book-a-car form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 2em;
+    }
+
+    .book-a-car .text{
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 750px) {
+    .book-a-car {
+        margin: 6em;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .book-a-car form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 2em;
+    }
+
+    .book-a-car .text {
+        margin-bottom: 5px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 750px) and (max-device-width : 1024px) {
+    .book-a-car {
+        margin: 8em;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .book-a-car form {
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .book-a-car .text {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1224px) {
+    .book-a-car {
+        margin: 4em;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .book-a-car form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .book-a-car .text {
+        margin-bottom: 10px;
+    }
+}
