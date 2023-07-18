@@ -6,6 +6,10 @@ import "../styling/Navbar.css"
 import Logo from "../images/logo.png"
 
 const Navbar = () => {
+  function toggle(){
+    this.classList.toggle('change')
+  }
+  
   return (
     <div className='navbar'>
         <img src={Logo} alt="logo" />
@@ -20,6 +24,11 @@ const Navbar = () => {
             <li><a href="#">Sign In</a></li>
             <li><button className='register'>Register</button></li>
         </ul>
+        <div className="hamburger-button" onClick={toggle}>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
     </div>
   )
 }
