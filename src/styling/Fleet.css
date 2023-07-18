@@ -30,3 +30,60 @@
     margin-top: 6em;
     width: 100%;
 }
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .fleet{
+        padding: 2em;
+        margin-top: 0em;
+        padding-top: 8em;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .fleet .vehicle-list{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 2em;
+        text-align: left;
+    }
+    .fleet .vehicle-list > * {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 900px) {
+    .fleet {
+        padding: 4em;
+        margin-top: 0em;
+        padding-top: 8em;
+        padding-bottom: 0;
+    } 
+    .fleet .vehicle-list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 2em;
+        text-align: left;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 901px) and (max-device-width : 1070px) {
+    .fleet {
+        padding: 6em;
+        margin-top: 0em;
+        padding-top: 8em;
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-device-width : 1071px) and (max-device-width : 1224px) {
+    .fleet {
+        padding: 12em;
+        margin-top: 0em;
+        padding-top: 8em;
+        padding-bottom: 0;
+    }
+}
