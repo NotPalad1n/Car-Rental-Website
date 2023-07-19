@@ -114,9 +114,11 @@
 
     .get-in-touch form{
         align-items: center;
+        padding: 0.75em;
     }
 
     .get-in-touch form div {
+        flex-direction: column;
         gap: 1em;
         width: 100%;
     }
@@ -139,11 +141,13 @@
 
     .get-in-touch form {
         align-items: center;
+        padding: 1em;
     }
 
     .get-in-touch form div {
-        gap: 2em; 
+        gap: 1em; 
         width: 100%;
+        flex-direction: column;
     }
 }
 

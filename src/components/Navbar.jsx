@@ -6,21 +6,23 @@ import "../styling/Navbar.css"
 import Logo from "../images/logo.png"
 
 const Navbar = () => {
+  const [isClicked, setIsClicked] = React.useState(false)
+  
   function toggle(){
-    this.classList.toggle('change')
+    setIsClicked(!isClicked)
   }
   
   return (
-    <div className='navbar'>
+    <div className={isClicked ? "navbar toggle" : "navbar"}>
         <img src={Logo} alt="logo" />
-        <ul>
-            <li><HashLink to="#Home">Home</HashLink></li>
-            <li><HashLink to="#Book">Book a Car</HashLink></li>
-            <li><HashLink to="#Services">Services</HashLink></li>
-            <li><HashLink to="#Fleet">Vehicle Models</HashLink></li>
-            <li><HashLink to="#Get-in-Touch">Get in Touch</HashLink></li>
+        <ul className={isClicked ? "nav-links active" : "nav-links"}>
+            <li><HashLink to="#Home" onClick={toggle}>Home</HashLink></li>
+            <li><HashLink to="#Book" onClick={toggle}>Book a Car</HashLink></li>
+            <li><HashLink to="#Services" onClick={toggle}>Services</HashLink></li>
+            <li><HashLink to="#Fleet" onClick={toggle}>Vehicle Models</HashLink></li>
+            <li><HashLink to="#Get-in-Touch" onClick={toggle}>Get in Touch</HashLink></li>
         </ul>
-        <ul>
+        <ul className={isClicked ? "nav-auth active" : "nav-auth"}>
             <li><a href="#">Sign In</a></li>
             <li><button className='register'>Register</button></li>
         </ul>

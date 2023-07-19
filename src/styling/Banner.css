@@ -100,7 +100,7 @@
         justify-content: center;
         text-align: center;
         padding: 2em;
-        padding-top: 8em;
+        padding-top: 12em;
     }
     .banner .text{
         width: 100%;
@@ -126,7 +126,7 @@
     }
 }
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 750px){
+@media only screen and (min-device-width : 481px) and (max-device-width : 750px){
     .banner {
         display: flex;
         flex-direction: column;
@@ -134,7 +134,7 @@
         justify-content: center;
         text-align: center;
         padding: 4em;
-        padding-top: 10em;
+        padding-top: 12em;
     }
     .banner .text {
         width: 100%;
@@ -167,7 +167,7 @@
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 750px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 751px) and (max-device-width : 1024px) {
     .banner {
         display: flex;
         flex-direction: column;
@@ -175,7 +175,7 @@
         justify-content: center;
         text-align: center;
         padding: 8em;
-        padding-top: 10em;
+        padding-top: 12em;
     }
 
     .banner .text {
@@ -211,7 +211,7 @@
     }
 }
 
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1224px) {
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1224px) {
     .banner{
         
         padding: 4em;
