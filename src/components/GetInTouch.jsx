@@ -7,17 +7,45 @@ const GetInTouch = () => {
   
   const form = useRef();
 
+  const [formInfo, setFormInfo] = React.useState(
+    {
+      name:'',
+      email:'',
+      subject:'',
+      message:''
+    }
+  )
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('car_rental', 'template_dwk6rhm', form.current, 'l1_TnfwGwEjpzlB6s')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+    if(formInfo.name !== '' && formInfo.email !== '' && formInfo.subject !== '' && formInfo.message !== ''){
+      emailjs.sendForm('car_rental', 'template_dwk6rhm', form.current, 'l1_TnfwGwEjpzlB6s')
+      .then(() => {
+          document.querySelector(".status").textContent = "Your e-mail was sent successfully"
+          document.querySelector(".status").style.color = "#77DD77"
+      }, () => {
+          document.querySelector(".status").textContent = "There was an error"
+          document.querySelector(".status").style.color = "red"
       });
+    }
+    else{
+      document.querySelector(".status").textContent = "Please fill in the info"
+      document.querySelector(".status").style.color = "black"
+    }
   };
+
+  function handleChange(event){
+      setFormInfo(prevInfo => {
+          return{
+            ...prevInfo, 
+            [event.target.name] : event.target.value
+          }
+        }
+      )
+  }
   
+  console.log(formInfo);
   
   return (
     <div id="Get-in-Touch">
@@ -25,7 +53,7 @@ const GetInTouch = () => {
         <p className="subtext">Contact</p>
         <h1 className="title">Get in touch</h1>
         <div className="form-and-info">
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} onChange={handleChange}>
             <div>
               <input type="text" name="name" placeholder="Name" />
               <input type="email" name="email" placeholder="Email" />
@@ -37,7 +65,10 @@ const GetInTouch = () => {
               placeholder="How can we help you"
               className="message"
             />
-            <button>Send message</button>
+            <div className="button-and-message">
+              <button>Send message</button>
+              <p className="status"> </p>
+            </div>
           </form>
           <div className="info">
             <div>

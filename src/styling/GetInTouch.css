@@ -92,7 +92,17 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.get-in-touch .button-and-message{
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+    align-items: center;
+}
 
+.get-in-touch .status{
+    font-weight: 600;
+    color: #77DD77;
+}
 
 
 
@@ -113,7 +123,6 @@
     }
 
     .get-in-touch form{
-        align-items: center;
         padding: 0.75em;
     }
 
@@ -121,6 +130,10 @@
         flex-direction: column;
         gap: 1em;
         width: 100%;
+    }
+
+    .get-in-touch .button-and-message{
+        gap: 1em;
     }
 }
 
@@ -140,7 +153,6 @@
     }
 
     .get-in-touch form {
-        align-items: center;
         padding: 1em;
     }
 
@@ -165,10 +177,6 @@
 
     .get-in-touch .info {
         width: 100%;
-    }
-
-    .get-in-touch form {
-        align-items: center;
     }
 
     .get-in-touch form div {
