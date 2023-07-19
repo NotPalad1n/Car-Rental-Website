@@ -102,7 +102,7 @@ const Book = () => {
               <p>Pick-up <span>*</span></p>
             </div>
             <input 
-              type="datetime" 
+              type="date" 
               placeholder='dd/mm/yyyy'
               name='pickUpDate'
               value={search.pickUpDate}
@@ -116,7 +116,7 @@ const Book = () => {
               <p>Drop-off <span>*</span></p>
             </div>
             <input 
-              type="datetime"
+              type="date"
               placeholder='dd/mm/yyyy'
               name='dropOffDate'
               value={search.dropOffDate}
